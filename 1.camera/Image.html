@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>H5+上传照片</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style>
+			.upload-line-camer{
+				width: 100%;
+				text-align: center;
+				padding: 2rem 1.3rem;
+			}
+			.upload-line-camer img{
+				border-radius: 0.8rem;
+			}
+			.mui-clearfix>div:nth-of-type(2){
+				margin: 0 1rem;
+			}
+			.upload-img{ 
+				width:8.9rem;
+				height: 8.9rem;
+				background-size:contain;
+			}
+			.mui-content-padded2{
+				margin: 3.5rem 1.3rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav back_fff">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">上传图片</h1>
+		</header>			
+		<div class="mui-content">
+			<div class="upload-image">
+				<div class="upload-line-camer ">
+					<div class="mui-clearfix">
+						<div class="fl">
+							<img id="photo1" class="upload-img" data-value="no" data-tValue="no" onclick="choiceMdode(this,'1')" src="../img/1.png"> 
+							<p>图片一</p> 
+						</div>
+						<div class="fl">
+							<img id="photo2" class="upload-img" data-value="no" data-tValue="no" onclick="choiceMdode(this,'2')" src="../img/1.png">
+							<p>图片二</p>
+						</div>
+						<div class="fl">
+							<img id="photo3" class="upload-img" data-value="no" data-tValue="no" onclick="choiceMdode(this,'3')" src="../img/1.png">
+							<p>图片三</p>
+						</div>
+					</div>
+					<div class="mui-clearfix">
+						<div class="fl">
+							<img id="photo4" class="upload-img" data-value="no" data-tValue="no" onclick="choiceMdode(this,'4')" src="../img/1.png">
+							<p>图片四</p>
+						</div>
+						<div class="fl">
+							<img id="photo5" class="upload-img" data-value="no" data-tValue="no" onclick="choiceMdode(this,'5')" src="../img/1.png">
+							<p>图片五</p>
+						</div>
+						<div class="fl">
+							<img id="photo6" class="upload-img" data-value="no" data-tValue="no" onclick="choiceMdode(this,'6')" src="../img/1.png">
+							<p>图片六</p>
+						</div>
+					</div>
+					<div class="mui-clearfix"> 
+						<div class="fl">
+							<img id="photo7" class="upload-img" data-value="no" data-tValue="no" onclick="choiceMdode(this,'7')" src="../img/1.png">
+							<p>图片七</p>
+						</div>
+						<div class="fl">
+							<img id="photo8" class="upload-img" data-value="no" data-tValue="no" onclick="choiceMdode(this,'8')" src="../img/1.png">
+							<p>图片八</p>
+						</div>
+					</div> 
+				</div>
+			</div>
+			<div>
+				<button id="uploadImg" type="button" class="mui-btn mui-btn-primary mui-btn-block">上 传</button>
+			</div>
+		</div>
+		<script src="../js/mui.min.js" type="text/javascript"></script>
+		<script src="../js/exif.js" type="text/javascript"></script>
+		<script src="Image.js" type="text/javascript"></script>
+	</body>
+</html> 
